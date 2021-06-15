@@ -1,0 +1,41 @@
+{
+	"name": "Shows_CSV",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "input_blob",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "shows1.csv",
+				"container": "input"
+			},
+			"columnDelimiter": ",",
+			"rowDelimiter": "\n",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "tconst",
+				"type": "String"
+			},
+			{
+				"name": "primaryTitle",
+				"type": "String"
+			},
+			{
+				"name": "startYear",
+				"type": "String"
+			},
+			{
+				"name": "genres",
+				"type": "String"
+			}
+		]
+	}
+}
