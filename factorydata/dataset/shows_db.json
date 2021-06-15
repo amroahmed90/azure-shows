@@ -1,0 +1,34 @@
+{
+	"name": "shows_db",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ShowsTable",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "TConst",
+				"type": "varchar"
+			},
+			{
+				"name": "Title",
+				"type": "varchar"
+			},
+			{
+				"name": "StartYear",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Genres",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "shows"
+		}
+	}
+}
